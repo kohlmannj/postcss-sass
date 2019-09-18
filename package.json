@@ -1,6 +1,6 @@
 {
   "name": "@kohlmannj/postcss-sass",
-  "version": "4.1.0-alpha.0",
+  "version": "4.1.0-alpha.1",
   "description": "Use Sass as a PostCSS plugin",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -24,12 +24,15 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "@csstools/sass-import-resolve": "^1.0.0"
+    "@csstools/sass-import-resolve": "^1.0.0",
+    "source-map": "^0.7.3"
   },
   "peerDependencies": {
-    "postcss": "^7.0.18",
-    "sass": "^1.22.12",
-    "source-map": "~0.7.3"
+    "postcss": "^7.0.18"
+  },
+  "optionalDependencies": {
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.12"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -46,8 +49,7 @@
     "pre-commit": "^1.2.2",
     "rollup": "^1.21.4",
     "rollup-plugin-babel": "^4.3.3",
-    "sass": "^1.22.12",
-    "source-map": "^0.7.3"
+    "sass": "^1.22.12"
   },
   "eslintConfig": {
     "extends": "dev",
